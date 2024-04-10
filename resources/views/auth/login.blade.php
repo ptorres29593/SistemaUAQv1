@@ -6,8 +6,12 @@
         @csrf
         <!-- Titulo Login -->
         <div>
-            <h3 class="text-5xl">Sistema de Digitalización de Expedientes</h3>
-            <h4>Facultad de Química</h4>
+            <div class="text-2xl">
+                {{ __('Sistema de Digitalización de Expedientes') }}
+            </div>
+            <div class="text-xl mb-6">
+                {{ __('Facultad de Química') }}
+            </div>
         </div>
         <!-- Email Address -->
         <div>
