@@ -13,21 +13,21 @@
 
                     <div class="relative overflow-x-auto">
                         <div>
-                            <x-primary-button class="mb-6 mt-3">
-                                <a>
-                                    {{ __('Nuevo Usuario') }}
-                                </a>
-                            </x-primary-button>
+                            <form action={{ route('register') }}>
+                                <x-primary-button class="mb-6 mt-3" >
+                                        {{ __('Nuevo Usuario') }}
+                                </x-primary-button>
+                            </form>
                         </div>
                         <div class="flex flex-col">
-                            <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-                                <div class="shadow-lg rounded-lg overflow-hidden mx-4 md:mx-10">
+                            <div class="overflow-x-auto">
+                                <div class="shadow-lg rounded-lg overflow-hidden">
                                     <table class="w-full table-fixed">
                                         <thead>
                                         <tr class="bg-gray-100">
-                                            <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Id</th>
-                                            <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Nombre</th>
-                                            <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Email</th>
+                                            <th class="w-1/3 py-4 px-6 text-left text-gray-600 font-bold uppercase">Id</th>
+                                            <th class="w-1/3 py-4 px-6 text-left text-gray-600 font-bold uppercase">Nombre</th>
+                                            <th class="w-1/3 py-4 px-6 text-left text-gray-600 font-bold uppercase">Email</th>
                                         </tr>
                                         </thead>
                                         <tbody class="bg-white">
