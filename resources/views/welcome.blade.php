@@ -8,19 +8,7 @@
 
                 <div class="p-6 text-gray-900">
 
-                    <div class="w-full relative overflow-x-auto flex flex-col lg:flex-row">
-                        <div>
-                            <x-application-logo class="block h-9 fill-current text-gray-800" />
-                        </div>
-                        <div class="lg:text-right flex-1">
-                            <div class="text-3xl">
-                                {{ __('Sistema de Digitalización de Expedientes') }}
-                            </div>
-                            <div class="text-2xl mb-4">
-                                {{ __('Facultad de Química') }}
-                            </div>
-                        </div>
-                    </div>
+                    @include('layouts.start-banner')
 
                     <div class="flex lg:flex-row flex-col">
 
@@ -64,9 +52,11 @@
                                 {{ __('Aun no estoy registrado') }}
                             </div>
                             <div class="my-4">
-                                <x-primary-button>
-                                    {{ __('Registrarme en línea') }}
-                                </x-primary-button>
+                                <form action="{{ route('registro') }}">
+                                    <x-primary-button>
+                                        {{ __('Registrarme en línea') }}
+                                    </x-primary-button>
+                                </form>
                             </div>
 
                             <div class="mt-10">

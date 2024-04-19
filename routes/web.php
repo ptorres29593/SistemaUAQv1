@@ -8,7 +8,11 @@ Route::get('users', [UserController::class, 'index'])->middleware(['auth', 'veri
 
 Route::get('/', function(){
    return view('welcome');
-});
+})->name('welcome');
+
+Route::get('/registro', function(){
+    return view('registro-aspirante');
+})->name('registro');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
