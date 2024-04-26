@@ -12,7 +12,7 @@
 
                     <div class="flex lg:flex-row flex-col">
 
-                        <div class="lg:w-1/2 mt-20 relative overflow-x-auto flex flex-col border-r">
+                        <div class="lg:w-1/2 mt-20 relative overflow-x-auto flex flex-col lg:border-r">
 
                             <div class="text-3xl pb-10">
                                 C O N V O C A T O R I A
