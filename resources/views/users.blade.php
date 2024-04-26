@@ -13,11 +13,11 @@
 
                     <div class="relative overflow-x-auto">
                         <div>
-                            <x-primary-button class="mb-6 mt-3">
-                                <a>
-                                    {{ __('Nuevo Usuario') }}
-                                </a>
-                            </x-primary-button>
+                            <form action={{ route('register') }}>
+                                <x-primary-button class="mb-6 mt-3" >
+                                        {{ __('Nuevo Usuario') }}
+                                </x-primary-button>
+                            </form>
                         </div>
                         <div class="flex flex-col">
                             <div class="overflow-x-auto">
