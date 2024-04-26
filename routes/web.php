@@ -7,8 +7,14 @@ use \App\Http\Controllers\ConvocatoriaController;
 
 Route::get('users', [UserController::class, 'index'])->middleware(['auth', 'verified'])->name('users');
 
-Route::get('/', [ConvocatoriaController::class, 'index']);
 
+Route::get('/', function(){
+   return view('welcome');
+})->name('welcome');
+
+Route::get('/registro', function(){
+    return view('registro-aspirante');
+})->name('registro');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
