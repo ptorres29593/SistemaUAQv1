@@ -12,12 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('expedientes', function (Blueprint $table) {
+            $table->id();
             $table->id('idExpediente')->autoIncrement;
             $table->integer('idAspirante');//int(11)
             $table->dateTime('fechaAbierto');// dateTimeTz para zona horaria
             $table->dateTime('fechaAprobado')->nullable;// dateTimeTz para zona horaria
             $table->tinyInteger('idstatus');
-            //$table->timestamps();
+            $table->timestamps();
         });
     }
 

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->mediumText('infoPrincipal');
             $table->mediumText('infoExpedeinte');
             $table->mediumText('infoFinalizado');
+            $table->timestamps();
         });
     }
 

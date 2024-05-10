@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('clave');
             $table->string('municipio');
             $table->string('sigla');
+
+            $table->timestamps();
         });
     }
 

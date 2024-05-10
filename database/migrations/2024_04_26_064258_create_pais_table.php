@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('iso');
             $table->string('pais');
+
+            $table->timestamps();
         });
     }
 

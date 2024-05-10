@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('posgrados', function (Blueprint $table) {
             $table->id();
             $table->string('descripción');
+
+            $table->timestamps();
         });
     }
 

@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('documento');
             $table->integer('pesoMax');
             $table->text('info');
+
+            $table->timestamps();
         });
     }
 

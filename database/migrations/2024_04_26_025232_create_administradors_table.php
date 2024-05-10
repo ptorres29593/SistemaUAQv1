@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('administradors', function (Blueprint $table) {
-            $table->id()->autoIncrement();
+            $table->id();
             $table->string('nombre');
             $table->string('password');
             $table->string('email');
@@ -20,7 +20,7 @@ return new class extends Migration
             $table->tinyInteger('notificar');//boolean tal vez
             $table->tinyInteger('activo');//boolean tal vez
 
-            //$table->timestamps();
+            $table->timestamps();
         });
     }
 

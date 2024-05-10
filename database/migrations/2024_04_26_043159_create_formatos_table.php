@@ -12,9 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('formatos', function (Blueprint $table) {
+            $table->id();
             $table->id('idFormato')->autoIncrement();
             $table->string('formato');
-            //$table->timestamps();
+            $table->timestamps();
         });
     }
 

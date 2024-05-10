@@ -12,12 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('extensiones', function (Blueprint $table) {
+            $table->id();
             $table->id('idExtension')->autoIncrement;
             $table->tinyInteger('idformato');
             $table->string('extension');
             $table->string('mime');
 
-            //$table->timestamps();
+            $table->timestamps();
         });
     }
 

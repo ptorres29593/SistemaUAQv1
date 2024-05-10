@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('aspirantes', function (Blueprint $table) {
             $table->id();
+            
             $table->mediumInteger('clave');
             $table->string('nombre');
             $table->string('apellidoPaterno');
@@ -40,6 +41,8 @@ return new class extends Migration
             $table->float('promedioGeneral');
             $table->tinyInteger('tieneTitulo');
             $table->string('LGAC');
+            
+            $table->timestamps();
         });
     }
 

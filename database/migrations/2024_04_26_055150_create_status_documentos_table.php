@@ -12,12 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('status_documentos', function (Blueprint $table) {
+            $table->id();
             $table->id('idDocumento');
             $table->tinyInteger('idStatus');
             $table->dateTime('fecha');
             $table->string('comentaario')->nullable();
 
-            //$table->timestamps();
+            $table->timestamps();
         });
     }
 
