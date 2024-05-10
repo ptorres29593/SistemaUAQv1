@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('statuses', function (Blueprint $table) {
             $table->id();
-            $table->id('idStatus')->autoIncrement();
+            //$table->id('idStatus')->autoIncrement();
             $table->string('status');
             $table->string('textoStatus');
             $table->timestamps();

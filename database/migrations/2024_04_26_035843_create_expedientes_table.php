@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('expedientes', function (Blueprint $table) {
             $table->id();
-            $table->id('idExpediente')->autoIncrement;
+            //$table->id('idExpediente')->autoIncrement;
             $table->integer('idAspirante');//int(11)
             $table->dateTime('fechaAbierto');// dateTimeTz para zona horaria
             $table->dateTime('fechaAprobado')->nullable;// dateTimeTz para zona horaria

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('extensiones', function (Blueprint $table) {
             $table->id();
-            $table->id('idExtension')->autoIncrement;
+            //$table->id('idExtension')->autoIncrement;
             $table->tinyInteger('idformato');
             $table->string('extension');
             $table->string('mime');

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('status_documentos', function (Blueprint $table) {
             $table->id();
-            $table->id('idDocumento');
+            //$table->id('idDocumento');
             $table->tinyInteger('idStatus');
             $table->dateTime('fecha');
             $table->string('comentaario')->nullable();

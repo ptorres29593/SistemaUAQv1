@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('formatos', function (Blueprint $table) {
             $table->id();
-            $table->id('idFormato')->autoIncrement();
+            //$table->id('idFormato')->autoIncrement();
             $table->string('formato');
             $table->timestamps();
         });
